@@ -9,10 +9,14 @@
 
 <body>
     <div id="root">
-        <h1>Hello World</h1>
+
+        <!-- hello world using html  -->
+        <!-- <h1>Hello World</h1> -->
     </div>
 
-    <script>
+    <!-- // hello world using JavaScript -->
+
+    <!-- <script>
         // creating heading element
         const heading = document.createElement("h1");
         // adding text to heading element
@@ -21,6 +25,24 @@
         const rootEl = document.getElementById("root");
         // appending to root
         rootEl.appendChild(heading);
+    </script> -->
+
+    <!-- // ingesting react and reactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- // creating hello world using react  -->
+    <script>
+        <!-- // creating heading element  -->
+        // const heading = React.createElement('h1', null, "Hello world from React");
+        const heading = React.createElement('h1', {
+            style:{color: 'red', backgroundColor: 'green'}
+        }, "Hello world from React");
+
+        // getting root
+        const rootEl =document.getElementById('root');
+        // rendering element
+        ReactDOM.render(heading, rootEl) // ReactDOM.render is no longer supported in React 18 use createRoot instead.Until you switch to the new API, your app will behave as if it's running React 17
     </script>
 </body>
 
