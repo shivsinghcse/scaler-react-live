@@ -13,7 +13,7 @@ const DisplayData = ({fruits, person}) => {
             <h2>Fruits list:</h2>
             <ul>
                 {/* render each fruit from fruits array */}
-                {fruits.map((fruit, index)=>{
+                {fruits.map((fruit)=>{
                     return <li key={index}>{fruit}</li>
                 })}
             </ul>

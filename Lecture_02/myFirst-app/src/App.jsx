@@ -10,6 +10,12 @@ import Button from './Button';
 function App() {
     const fruits = ['apple', 'banana', 'grapes', 'orange', 'Mango'];
     const person = { name: 'jon', profile: 'Dev' };
+    let stationary = [
+      { id: "1", name: "Pen" },
+      { id: 2, name: "Pencil" },
+      { id: 3, name: "Eraser" },
+      { id: 4, name: "Ruler" },
+    ];
     return (
         <>
             {/* <MyComponent
