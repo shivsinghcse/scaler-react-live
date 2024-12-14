@@ -1,13 +1,13 @@
 import React from 'react';
 
-const MyComponent = () => {
-    return <>
-        <h1>Hello, I am a component.</h1>
-        <h1>Hello, I am a component.</h1>
-        <h1>Hello, I am a component.</h1>
-        <h1>Hello, I am a component.</h1>
-        <h1>Hello, I am a component.</h1>
-    </>
+const MyComponent = (props) => {
+    console.log(props.user.name);
+    
+    return (
+        <>
+            <h1>{props.message}. Hi, I'm {props.user.name} a {props.user.Profile} </h1>
+        </>
+    );
 };
 
 export default MyComponent;
