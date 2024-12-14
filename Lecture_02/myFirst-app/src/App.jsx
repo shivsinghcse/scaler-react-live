@@ -3,23 +3,14 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import MyComponent from './MyComponent';
+import DisplayData from './DisplayData';
 
 function App() {
+    const fruits = ['apple', 'banana', 'grapes', 'orange', 'Mango'];
+    const person = { name: 'jon', profile: 'Dev' };
     return (
         <>
-            <div>
-                <a href="https://vite.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img
-                        src={reactLogo}
-                        className="logo react"
-                        alt="React logo"
-                    />
-                </a>
-            </div>
-            <MyComponent
+            {/* <MyComponent
                 message="Hello, I am a component1"
                 user={{ name: 'Shiv Singh', Profile: 'Dev' }}
             />
@@ -30,8 +21,11 @@ function App() {
             <MyComponent
                 message="Hola! I am last"
                 user={{ name: 'Shiv Singh', Profile: 'Dev' }}
-            />
+            /> */}
             {/* <MyComponent />*/}
+
+            <h2>Props example with Array</h2>
+            <DisplayData fruits = {fruits} person = {person} />
         </>
     );
 }
