@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import MyComponent from './MyComponent';
 import DisplayData from './DisplayData';
+import ConditionalRendering from './ConditionalRendering';
 
 function App() {
     const fruits = ['apple', 'banana', 'grapes', 'orange', 'Mango'];
@@ -24,8 +25,10 @@ function App() {
             /> */}
             {/* <MyComponent />*/}
 
-            <h2>Props example with Array</h2>
-            <DisplayData fruits = {fruits} person = {person} />
+            {/* <h2>Props example with Array</h2>
+            <DisplayData fruits = {fruits} person = {person} /> */}
+
+            <ConditionalRendering isLoggedin={true} username={'Jhon'}/>
         </>
     );
 }
