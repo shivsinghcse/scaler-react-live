@@ -5,6 +5,7 @@ import './App.css';
 import MyComponent from './MyComponent';
 import DisplayData from './DisplayData';
 import ConditionalRendering from './ConditionalRendering';
+import Button from './Button';
 
 function App() {
     const fruits = ['apple', 'banana', 'grapes', 'orange', 'Mango'];
@@ -29,6 +30,7 @@ function App() {
             <DisplayData fruits = {fruits} person = {person} /> */}
 
             <ConditionalRendering isLoggedin={true} username={'Jhon'}/>
+            <Button />
         </>
     );
 }
