@@ -32,17 +32,26 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
     <!-- // creating hello world using react  -->
-    <script>
-        <!-- // creating heading element  -->
-        // const heading = React.createElement('h1', null, "Hello world from React");
-        const heading = React.createElement('h1', {
-            style:{color: 'red', backgroundColor: 'green'}
-        }, "Hello world from React");
+    <!-- <script> -->
+    <!-- // creating heading element  -->
+    <!-- // const heading = React.createElement('h1', null, "Hello world from React");
+        // const heading = React.createElement('h1', {
+        //     style:{color: 'red', backgroundColor: 'green'}
+        // }, "Hello world from React");
 
         // getting root
-        const rootEl =document.getElementById('root');
+        // const rootEl =document.getElementById('root');
         // rendering element
-        ReactDOM.render(heading, rootEl) // ReactDOM.render is no longer supported in React 18 use createRoot instead.Until you switch to the new API, your app will behave as if it's running React 17
+        // ReactDOM.render(heading, rootEl) // ReactDOM.render is no longer supported in React 18 use createRoot instead.Until you switch to the new API, your app will behave as if it's running React 17 -->
+    <!-- </script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        function App(){
+            return <h1>Hello from Ract JSX</h1>
+        }
+
+        ReactDOM.render(<App/>, root)
+        
     </script>
 </body>
 
