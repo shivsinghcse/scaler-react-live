@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Routes, Route, Link, useParams } from 'react-router';
 
 function About() {
-    return <h2>About Page</h2>;
+    return <h2 className="text-xl bg-red-400">About Page</h2>;
 }
 function Home() {
     return <h3>I am Home Page</h3>;
