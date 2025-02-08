@@ -1,6 +1,6 @@
-import Navbar from './Components/Navbar';
-import Home from './Components/Home';
-import WatchList from './Components/WatchList';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import WatchList from './components/WatchList';
 import { Routes, Route } from 'react-router';
 
 function App() {

@@ -1,5 +1,13 @@
+import Banner from './Banner';
+import Movies from './Movies';
+
 const Home = () => {
-    return <div>Home</div>;
+    return (
+        <div>
+            <Banner />
+            <Movies />
+        </div>
+    );
 };
 
 export default Home;
