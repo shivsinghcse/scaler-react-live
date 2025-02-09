@@ -1,5 +1,11 @@
+import MovieCard from "./MovieCard";
+
 const WatchList = () => {
-    return <div>WatchList</div>;
+    return (
+        <>
+            {/* <MovieCard /> */}
+        </>
+    );
 };
 
 export default WatchList;
