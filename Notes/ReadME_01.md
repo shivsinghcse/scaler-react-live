@@ -1,12 +1,11 @@
 ## Ways to get React in your code
 
-    1. via CDN
-        ```javascript
-            <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-
-            <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-        ```
-        
+    1. via CDN        
     2. Package managers (Build tools)
 
-
+### What is React?
+### What is CDN?
+### why 2 CDN links? and why we cann't we have one?
+### why we write CDN script in head?
+-while parsing we want the packages to be downloaded
+### what is JXS?

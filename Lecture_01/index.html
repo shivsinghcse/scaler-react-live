@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to React</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-</head>
+    <!-- // ingesting React and ReactDOM  -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
 
-<body>
-    <div id="root">
-
-        <!-- hello world using html  -->
-        <!-- <h1>Hello World</h1> -->
-    </div>
-
-    <!--  hello world using JavaScript -->
-
-    <!-- <script>
-        // creating heading element
-        const heading = document.createElement("h1");
-        // adding text to heading element
-        heading.innerHTML = "Hello World from JavaScript!"
-        // getting the root element
-        const rootEl = document.getElementById("root");
-        // appending to root
-        rootEl.appendChild(heading);
-    </script> -->
-
-    <!-- // ingesting react and reactDOM -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <!-- // creating hello world using react  -->
-    <!-- <script> -->
-    <!-- // creating heading element  -->
-    <!-- // const heading = React.createElement('h1', null, "Hello world from React");
-        // const heading = React.createElement('h1', {
-        //     style:{color: 'red', backgroundColor: 'green'}
-        // }, "Hello world from React");
-
-        // getting root
-        // const rootEl =document.getElementById('root');
-        // rendering element
-        // ReactDOM.render(heading, rootEl) // ReactDOM.render is no longer supported in React 18 use createRoot instead.Until you switch to the new API, your app will behave as if it's running React 17 -->
-    <!-- </script> -->
+    <!-- // ingesting babel -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-        function App(){
-            return <h1>Hello from Ract JSX</h1>
-        }
+  </head>
+  <body>
+    <!-- Hello world using HTML  -->
+    <!-- <div id="root">
+                <h1>Hello World!</h1>
+            </div> -->
 
-        ReactDOM.render(<App/>, root)
-        
-    </script>
-</body>
+    <!-- Hello World using JavaScript   -->
+    <!-- <div id="root"></div>
+            <script>
+                // selecting the root element
+                const rootEl = document.getElementById("root");
+                // creating heading element
+                const headingEl = document.createElement('h1');
+                // adding text to heading element
+                headingEl.innerText = "Hello World using JavaScript!";
+                // appending heading element to the root
+                rootEl.appendChild(headingEl);
+            </script> -->
 
+    <!-- Hello World using React   -->
+        <!-- As all the things we will build, will go inside the root  -->
+         <div id="root"></div>
+
+        <script>
+            // selecting the root element
+            const rootEl = document.getElementById("root");
+            // creating heading element
+            const headingEl = React.createElement('h1', {id:"title", style:{color: 'dodgerblue'}}, 'Hello World using React!!');
+            // rendering the heading to the DOM
+            // ReactDOM.render(headingEl, rootEl) takes to arguments 
+                // 1. what to render
+                // 2. where to render
+            //ReactDOM.render(headingEl, rootEl); //  Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17.
+
+            // creating / selecting root 
+            const root = ReactDOM.createRoot(rootEl);
+            // rendering the heading on to the DOM using render method
+            root.render(headingEl);
+        </script> 
+
+    <!-- Hello world from React component / JSX -->
+
+        <!-- <div id="root"></div>
+
+        <script type="text/babel">
+            const rootEl = document.getElementById("root");
+            function App(){
+                return <h1>Hello World from React Component JSX!!</h1>;
+            }
+
+            ReactDOM.render(<App/>, rootEl)
+        </script> -->
+  </body>
 </html>
