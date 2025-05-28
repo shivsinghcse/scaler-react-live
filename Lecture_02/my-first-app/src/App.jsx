@@ -1,6 +1,8 @@
 import MyComponent from './MyComponent'
 import './App.css'
 import ConditionalRendering from "./ConditionalRendering";
+import Button from './Button';
+
 
 function App() {
 
@@ -12,6 +14,7 @@ function App() {
 
       <ConditionalRendering isLoggedIn={true} username={'Shiv'}/>
       <ConditionalRendering isLoggedIn={false} username={'Ajeet'}/>
+      <Button />
     </>
   )
 }
