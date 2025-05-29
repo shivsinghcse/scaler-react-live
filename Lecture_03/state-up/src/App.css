@@ -44,3 +44,9 @@
 button{
   margin: 10px;
 }
+
+.form{
+  border: 1px solid;
+  padding: 50px 30px;
+  border-radius: 14px;
+}
